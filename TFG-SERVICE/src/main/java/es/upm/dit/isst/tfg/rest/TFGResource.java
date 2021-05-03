@@ -61,10 +61,10 @@ public class TFGResource {
 		System.out.println("Update request for" + id + " " +
 				t.toString());
 		TFG told = TFGDAOImplementation.getInstance().read(id);
-		if ((told == null) || (!
-				told.getEmail().contentEquals(t.getEmail())))
+		if ((told == null) || (!told.getEmail().contentEquals(t.getEmail())))
 			return Response.notModified().build();
-		TFGDAOImplementation.getInstance().update(t); return Response.ok().build(); 
+		TFGDAOImplementation.getInstance().update(t);
+		return Response.ok().build(); 
 	}
 	
 	@DELETE

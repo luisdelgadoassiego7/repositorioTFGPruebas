@@ -1,4 +1,5 @@
 package es.upm.dit.isst.tfg.dao;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
